@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aiju.zyb.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/home_main_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/index_tab">
+
+    </FrameLayout>
+
+    <include
+        android:id="@+id/index_tab"
+        layout="@layout/view_common_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </include>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context="com.aiju.zyb.view.ui.fragment.MineFragment">
+    <include   android:id="@+id/header_one" layout="@layout/mineheadlayout"  android:visibility="visible" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/li_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_60"
+                    android:orientation="vertical"
+                    android:background="@color/ec_tab_press"
+                    >
+                    </LinearLayout>
+                   <LinearLayout
+                       android:id="@+id/li_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_80"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                       android:layout_below="@+id/li_one"
+                    >
+
+                   </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_40"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/head_re"
+                        android:layout_width="67dp"
+                        android:layout_height="67dp"
+                        android:background="@drawable/cicrle_shape"
+                        android:gravity="center"
+                        >
+                  <ImageView
+                    android:id="@+id/head_img"
+                    android:layout_width="@dimen/margin_65"
+                    android:layout_height="@dimen/margin_65"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dsb_no_avatar"
+                    />
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/head_re"
+                        android:layout_marginBottom="@dimen/margin_15"
+                        android:layout_marginLeft="@dimen/margin_15"
+                        android:layout_marginRight="@dimen/margin_15"
+                        >
+                      <TextView
+                          android:id="@+id/login"
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/margin_35"
+                          android:text="@string/login"
+                          android:gravity="center"
+                          android:background="@drawable/login_btn_shape"
+                          android:textSize="@dimen/textsize16"
+                          android:textColor="@color/ec_tab_press"
+                          />
+
+                        <TextView
+                            android:id="@+id/login_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/color_33"
+                            android:textSize="@dimen/textsize20"
+                            android:layout_marginLeft="@dimen/margin_15"
+                            android:layout_marginBottom="@dimen/margin_10"
+                            android:visibility="gone"
+                            />
+                    </FrameLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/margin_1px"
+              android:background="@color/line"
+              android:layout_marginTop="@dimen/margin_10"
+              android:visibility="gone"
+              >
+          </View>
+            <LinearLayout
+                android:id="@+id/my_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

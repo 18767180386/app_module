@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *  *
+  ~  *  *  * ===================================
+  ~  *  *  * Copyright (c) 2016.
+  ~  *  *  * 作者：安卓猴
+  ~  *  *  * 微博：@安卓猴
+  ~  *  *  * 博客：http://sunjiajia.com
+  ~  *  *  * Github：https://github.com/opengit
+  ~  *  *  *
+  ~  *  *  * 注意**：如果您使用或者修改该代码，请务必保留此版权信息。
+  ~  *  *  * ===================================
+  ~  *  *
+  ~  *  *
+  ~  *
+  ~  */
+   0上新	 1 女装  2居家  3 母婴 4，鞋包配饰  5 美妆  6 美食   7  数码  8男士  9 保健
+
+  -->
+
+<resources>
+
+  <string-array name="tab_titles">
+    <item>上新</item>
+    <item>女装</item>
+    <item>居家</item>
+    <item>母婴</item>
+    <item>鞋包配饰</item>
+    <item>美妆</item>
+    <item>美食</item>
+    <item>数码</item>
+    <item>男士</item>
+  </string-array>
+</resources>

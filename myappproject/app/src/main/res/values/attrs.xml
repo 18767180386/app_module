@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WarpLinearLayout">
+        <attr name="grivate" format="enum"><!--对齐方式 !-->
+            <enum name="right" value="0"></enum>
+            <enum name="left" value="1"></enum>
+            <enum name="center" value="2"></enum>
+        </attr>
+        <attr name="horizontal_Space" format="dimension"></attr>
+        <attr name="vertical_Space" format="dimension"></attr>
+        <attr name="isFull" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="BorderLinearLayout">
+        <attr name="border_left_size" format="dimension" />
+        <attr name="border_top_size" format="dimension" />
+        <attr name="border_right_size" format="dimension" />
+        <attr name="border_bottom_size" format="dimension" />
+        <attr name="border_enable" default="true" format="boolean" />
+        <attr name="border_colors" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="gifView">
+
+        <!-- 图片来源 -->
+        <attr name="src" format="integer" />
+
+        <!-- 播放延迟 -->
+        <attr name="delay" format="integer" />
+
+        <!-- 设置是否停止 -->
+        <attr name="stop" format="boolean" />
+    </declare-styleable>
+
+</resources>

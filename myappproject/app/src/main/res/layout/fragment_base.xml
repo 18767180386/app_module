@@ -1,0 +1,12 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aiju.zyb.view.BaseFragment">
+    <!-- TODO: Update blank fragment layout -->
+    <include   android:id="@+id/header_one" layout="@layout/activity_comm_head"  android:visibility="visible" />
+    <include   android:id="@+id/header_two" layout="@layout/fragmenthead"  android:visibility="gone" />
+    <include   android:id="@+id/header_three" layout="@layout/fragment_head_three"  android:visibility="gone" />
+</LinearLayout>

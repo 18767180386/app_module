@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.aiju.zyb.view.photo.PhotoDetailActivity">
+    <RelativeLayout
+        android:id="@+id/photo_re"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.aiju.zyb.view.widget.ImgViewPager
+            android:id="@+id/vpMain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        </com.aiju.zyb.view.widget.ImgViewPager>
+
+        <ImageView
+            android:id="@+id/backIvs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:padding="@dimen/margin_20"
+            android:src="@mipmap/turn_left_white" />
+
+        <LinearLayout
+            android:id="@+id/dellinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/deleteImage"
+                android:layout_width="148.8dp"
+                android:layout_height="42.6dp"
+                android:layout_marginLeft="7dp"
+                android:text="删 除"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/vpLL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                android:paddingBottom="10dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    >
+                    <TextView
+                        android:id="@+id/tvIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/tvNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="/12" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/save_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"
+                    android:textSize="@dimen/textsize18"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

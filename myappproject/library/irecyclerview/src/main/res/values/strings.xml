@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="net_error">网络访问错误，请稍后再试</string>
+    <string name="empty">还没有数据哦</string>
+    <string name="reload">重新尝试</string>
+    <string name="no_net">网络不可用,请检查你的网络</string>
+
+    <string name="title_text_str">聊天</string>
+    <string name="btn_look_more">去看看</string>
+    <string name="txt_look_more">还有更多好货等你来选</string>
+    <string name="no_more_data">已经到底了</string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中…</string>
+    <string name="loading">正在加载</string>
+
+
+    <string name="drop_down_refresh">下拉刷新</string>
+    <string name="looseninga_and_refreshing">松开刷新</string>
+    <string name="refresh_ing">刷新中</string>
+    <string name="refresh_complete">刷新完成</string>
+    </resources>

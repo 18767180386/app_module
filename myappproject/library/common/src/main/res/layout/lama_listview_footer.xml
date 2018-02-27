@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/xlistview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/xlistview_footer_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@anim/update_loading_progressbar_anim" />
+
+        <TextView
+            android:id="@+id/xlistview_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pushmsg_center_load_more_ongoing_text"
+            android:textColor="#999999"
+            android:textSize="14dp" />
+        <!-- <TextView -->
+        <!-- android:id="@+id/xlistview_footer_hint_textview" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:text="@string/xlistview_footer_hint_normal" /> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_look_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_look_more"
+            android:textColor="@color/product_item_tv_gonglue_color"
+            android:textSize="12dp" 
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/btn_look_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/bg_look_more"
+            android:background="@android:color/transparent"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_more_data"
+        android:textColor="@color/product_item_tv_gonglue_color"
+        android:textSize="12dp" 
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+</LinearLayout>

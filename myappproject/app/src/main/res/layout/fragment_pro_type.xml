@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgcolor"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_5"
+        >
+
+    <TextView
+        android:id="@+id/toptype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="@dimen/textsize14"
+        />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toptype"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingTop="@dimen/margin_10"
+            android:background="@color/white"
+            >
+    <GridView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:scrollbars="none"
+        android:cacheColorHint="#0000"
+        android:listSelector="#0000"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_15"
+        />
+
+    <ImageView
+        android:id="@+id/hint_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+     <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="@dimen/margin_15"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

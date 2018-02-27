@@ -1,0 +1,17 @@
+http://blog.csdn.net/knxw0001/article/details/39637273/
+
+http://www.oschina.net/project/tag/342/android-ui  新控件特效
+
+http://www.jianshu.com/p/aa7238cd8daf  开源项目
+
+
+http://blog.csdn.net/yy007h/article/details/50455660  toolbar fragment
+
+
+http://tech.youzan.com/trade_manage/     http://tech.youzan.com/   数据同步
+
+
+http://blog.csdn.net/sinat_33661267/article/details/51751301  android---常驻悬浮框效果的实现
+
+
+http://892848153.iteye.com/blog/1990130  调用其它包 context

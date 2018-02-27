@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context="com.aiju.zyb.view.ui.SetingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+    <LinearLayout
+        android:id="@+id/seting_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_li"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_20"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_35"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize15"
+                    android:gravity="center"
+                    android:text="@string/login_out"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:background="@drawable/login_shape"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>

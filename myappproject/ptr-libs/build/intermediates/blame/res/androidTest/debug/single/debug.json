@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_ptr_classic_default_header.xml.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_cube_mints_update_progressbar.xml.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable\\cube_mints_update_progressbar.xml"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ptr_rotate_arrow.png.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_default_footer_layout.xml.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\default_footer_layout.xml"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_views_load_more_new_footer.xml.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_views_load_more_new_footer.xml"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_ptr_simple_loading.xml.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_views_load_more_default_footer.xml.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_views_load_more_default_footer.xml"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ptr_rotate_arrow.png.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ptr_rotate_arrow.png"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_ptr_classic_default_header.xml.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_classic_default_header.xml"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_base_waitting.png.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\base_waitting.png"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ecbao_refresh.png.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ecbao_refresh.png"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_default_footer_layout.xml.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\default_footer_layout.xml"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_ecbao_refresh.png.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ecbao_refresh.png"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_ptr_simple_loading.xml.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_ptr_simple_loading.xml"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_base_waitting.png.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\base_waitting.png"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_cube_mints_update_progressbar.xml.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\drawable\\cube_mints_update_progressbar.xml"
+    },
+    {
+        "merged": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_views_load_more_new_footer.xml.flat",
+        "source": "D:\\work\\android_demo\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_views_load_more_new_footer.xml"
+    },
+    {
+        "merged": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_cube_views_load_more_default_footer.xml.flat",
+        "source": "D:\\work\\my_job\\android_pro\\my_android\\myappproject\\ptr-libs\\build\\intermediates\\bundles\\debug\\res\\layout\\cube_views_load_more_default_footer.xml"
+    }
+]

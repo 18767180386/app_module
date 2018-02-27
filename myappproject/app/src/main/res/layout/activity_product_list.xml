@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_product_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    android:orientation="vertical"
+    tools:context="com.aiju.zyb.view.ui.ProductListActivity">
+
+    <com.aiju.zyb.view.widget.ProductNavLayout
+        android:id="@+id/pro_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/top_nav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <LinearLayout
+                android:id="@+id/pro_li_id"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/all_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/ec_tab_color_selector"
+                    android:textSize="@dimen/textsize14"
+                    android:text="@string/all_pro"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/price_li"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@drawable/ec_tab_color_selector"
+                    android:textSize="@dimen/textsize14"
+                    android:text="@string/price"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1px"
+            android:background="@color/line"
+            >
+
+        </View>
+        <LinearLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.aiju.zyb.view.widget.LoadMoreRecyclerView
+                android:id="@+id/order_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </com.aiju.zyb.view.widget.ProductNavLayout>
+
+
+
+</LinearLayout>

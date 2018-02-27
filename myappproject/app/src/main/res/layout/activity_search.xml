@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context="com.aiju.zyb.view.ui.SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/history_result_li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_10"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1px"
+            android:background="@color/line"
+            ></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:paddingLeft="@dimen/margin_15"
+            android:paddingRight="@dimen/margin_15"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize14"
+                android:textColor="@color/color_5b5858"
+                android:text="@string/search_reord"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                />
+
+
+
+            <TextView
+                android:id="@+id/del_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/tab_text"
+                android:textSize="@dimen/textsize14"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/del_img"
+                android:drawablePadding="7dp"
+                android:text="@string/clear"
+                />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1px"
+            android:background="@color/line"
+            ></View>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.aiju.zyb.view.widget.WarpLinearLayout
+                    android:id="@+id/warpLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginRight="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:padding="10dp"
+                    app:grivate="left"
+                    app:horizontal_Space="10dp"
+                    app:isFull="false"
+                    app:vertical_Space="10dp">
+
+                </com.aiju.zyb.view.widget.WarpLinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

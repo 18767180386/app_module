@@ -1,0 +1,197 @@
+apply plugin: 'com.android.application'
+
+def releaseTime() {
+    return new Date().format("yyyy_MM_dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.aiju.zyb"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        flavorDimensions "versionCode"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    // dexOptions {
+    //  incremental true
+    // javaMaxHeapSize "4g"
+    //  }
+
+
+    signingConfigs {
+        debug {
+            // No debug config
+//            storeFile file('../debug.keystore')
+//            storePassword ""
+        }
+
+        release {
+            storeFile file("../youhuike.jks")
+            storePassword "123456yhk789"
+            keyAlias "yhk"
+            keyPassword "123456yhk789"
+
+        }
+    }
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-annotations'
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "String", "BASE_URL", "\"http://192.168.1.144:80\""
+//            buildConfigField "String", "BASE_URL", "\"http://www.ecbao.cn\""
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+        release {
+            // 不显示Log
+            minifyEnabled true//是否进行混淆
+            zipAlignEnabled true//混淆后的zip优化
+            shrinkResources true// 移除无用的resource文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            /*
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为boohee_v1.0_2015-01-15_wandoujia.apk
+                        def fileName = "yhk_${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+            */
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "ecbao${defaultConfig.versionName}_${releaseTime()}_${variant.productFlavors[0].name}.apk"
+                }
+            }
+
+        }
+
+        task javadoc(type: Javadoc) { options.encoding = "utf-8" }
+
+    }
+
+    sourceSets.main {
+        //让AS识别libs下的.so第三方包
+        jniLibs.srcDirs = ['libs']
+    }
+
+    /*在此配置多渠道打包*/
+    productFlavors {
+//        pc {
+//            manifestPlaceholders = [TD_CHANNEL_ID_VALUE: "Pc"]
+//        }
+// pc {
+//            manifestPlaceholders = [TD_CHANNEL_ID_VALUE: "Pc"]
+//        }
+
+        /*
+          xiaomi {}
+          _360 {}
+          baidu {}
+          wandoujia {}
+         _91 {}
+         yingyongbao {}
+          taobao {}
+         anzhi {}
+          oppo {}
+          huawei {}
+          meizu {}
+          leshi {}
+
+          */
+
+        pc {}
+        //通过app升级功能升级的
+        // user_update {}
+
+        productFlavors.all {
+            flavor -> flavor.manifestPlaceholders = [TD_CHANNEL_ID_VALUE: name]
+        }
+
+
+    }
+
+}
+
+repositories {
+    maven {
+        // url "http://mvnrepo.alibaba-inc.com/mvn/repository"
+        url "http://repo.baichuan-android.taobao.com/content/groups/BaichuanRepositories/"
+    }
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':baselibrary')
+    //fastjson
+    //支付
+    //登陆
+    //【可选】仅供特殊合作伙伴使用
+    //安全基础
+    //【可选】安全高级，如使用了发放红包、优惠券高级功能，则必须引入
+    //Mtop网关
+    //applink
+    //UT
+    //电商SDK
+    // compile files('libs/alibabauth_accountlink-1.1.4.jar')
+    compile project(':ptr-libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.alibaba:fastjson:1.2.9'
+
+    /*
+    compile 'com.alibaba.alipay:alipaySingle:20160825@jar'
+    compile 'com.ali.auth.sdk:alibabauth_core:1.1.4@jar'
+    compile 'com.ali.auth.sdk:alibabauth_ui:1.1.4@aar'
+    compile 'com.ali.auth.sdk:alibabauth_ext:1.1.4@jar'
+    compile 'com.ali.auth.sdk:alibabauth_accountlink:1.1.4@jar'
+    compile 'com.taobao.android:securityguardaar3:5.1.81@aar'
+    compile 'com.taobao.android:securitybodyaar3:5.1.25@aar'
+    compile 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
+    compile 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.0@aar'
+    compile 'com.taobao.android:alibc_applink:2.0.0.9@jar'
+    compile 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
+    compile 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
+    compile 'com.alibaba.sdk.android:alibc_trade_common:3.1.1.99'
+    compile 'com.alibaba.sdk.android:alibc_trade_biz:3.1.1.99'
+    compile 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.99'
+    */
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    testCompile 'junit:junit:4.12'
+    compile project(':library:irecyclerview')
+}

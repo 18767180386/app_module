@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\app\app.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baselibrary/baselibrary.iml" filepath="$PROJECT_DIR$/baselibrary/baselibrary.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\baselibrary\baselibrary.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\baselibrary\baselibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/common/common.iml" filepath="$PROJECT_DIR$/library/common/common.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\library\common\common.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\library\common\common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/irecyclerview/irecyclerview.iml" filepath="$PROJECT_DIR$/library/irecyclerview/irecyclerview.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\library\irecyclerview\irecyclerview.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\library\irecyclerview\irecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javalib/javalib.iml" filepath="$PROJECT_DIR$/javalib/javalib.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\javalib\javalib.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\javalib\javalib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\library\library.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\library\library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myappproject.iml" filepath="$PROJECT_DIR$/myappproject.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\myappproject.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\myappproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-libs/ptr-libs.iml" filepath="$PROJECT_DIR$/ptr-libs/ptr-libs.iml" />
+      <module fileurl="file://D:\work\my_job\android_pro\my_android\myappproject\ptr-libs\ptr-libs.iml" filepath="D:\work\my_job\android_pro\my_android\myappproject\ptr-libs\ptr-libs.iml" />
+    </modules>
+  </component>
+</project>

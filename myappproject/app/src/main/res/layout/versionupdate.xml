@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:background="@drawable/more_user_nickname_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/versionlayout"
+    android:paddingBottom="@dimen/margin_20"
+     >
+
+    <TextView
+        android:id="@+id/versionprompt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginTop="40dip"
+        android:text="新版更新"
+        android:textColor="#333"
+        android:textSize="18dip"
+        />
+  
+    <ProgressBar
+        android:id="@+id/versionprogress"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:layout_gravity="center_horizontal" 
+        android:maxHeight="20dp"
+        android:minHeight="20dp"
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/progess"
+        android:progressDrawable="@drawable/progress_horizontal1" />
+
+    <LinearLayout
+        android:id="@+id/versionload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/vprogresspercent"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="0%"
+              android:textColor="#333"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/vprogresssize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dip"
+            
+            android:gravity="right"
+            android:layout_marginRight="40dp"
+            android:text="0M/0M"
+            android:textColor="#333"
+            android:textSize="14dip" />
+    </LinearLayout>
+    
+    
+ 
+
+</LinearLayout>

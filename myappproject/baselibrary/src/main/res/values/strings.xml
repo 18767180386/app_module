@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">baselibrary</string>
+    <string name="toast_quit" translatable="false">再按一次返回键退出程序</string>
+
+    <!--————————————————————————————— 通用dialog ——————————————————————————————-->
+    <string name="confirm_dialog_cancel_btn">取消</string>
+    <string name="confirm_dialog_confirm_btn">确定</string>
+    <string name="confirm_dialog_">下载</string>
+
+    <string name="update_content_force">此版本必须升级，否是电商宝APP无法使用！</string>
+    <string name="update_content_no_force">电商宝新版本发布了，更多新功能等您来体验！</string>
+    <string name="update_title">发现新版本</string>
+    <string name="update_waite">再等等</string>
+    <string name="update_waite_update">升级</string>
+    <string name="update_cancel">退出</string>
+
+
+    <string name="load_tip">正在处理中...</string>
+
+
+
+
+</resources>

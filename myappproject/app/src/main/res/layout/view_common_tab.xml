@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/index_tab_color"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1px"
+        android:background="@color/user_home_line_dddddd">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimens_dp_1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/home_tab_home_layout"
+            android:layout_width="@dimen/dimens_dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimens_dp_7"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/dsb_img"
+                    android:layout_width="@dimen/dimens_dp_25"
+                    android:layout_height="@dimen/dimens_dp_25"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ec_tab_home_btn" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dsb_img"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dimens_dp_4"
+                    android:text="@string/ec_tab_home_title"
+                    android:textColor="@drawable/ec_tab_color_selector"
+                    android:textSize="@dimen/dimens_sp_10" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_tab_contacts_layout"
+            android:layout_width="@dimen/dimens_dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimens_dp_7"
+            android:layout_weight="1"
+            android:background="@color/seed_zhi_transparent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/dimens_dp_25"
+                    android:layout_height="@dimen/dimens_dp_25"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ec_tab_contacts_btn" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dimens_dp_4"
+                    android:text="@string/ec_tab_contacts"
+                    android:textColor="@drawable/ec_tab_color_selector"
+                    android:textSize="@dimen/dimens_sp_10" />
+
+                <TextView
+                    android:id="@+id/unread_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:layout_marginLeft="-8dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="@dimen/textsize10"
+                    android:textColor="@color/white"
+                    android:paddingLeft="@dimen/margin_3"
+                    android:paddingRight="@dimen/margin_3"
+                    android:background="@drawable/unread_bg"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_tab_job_layout"
+            android:layout_width="@dimen/dimens_dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimens_dp_7"
+            android:layout_weight="1"
+            android:background="@color/seed_zhi_transparent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/dimens_dp_25"
+                    android:layout_height="@dimen/dimens_dp_25"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ec_tab_contacts_btn" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageView3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dimens_dp_4"
+                    android:text="@string/ec_tab_contacts"
+                    android:textColor="@drawable/ec_tab_color_selector"
+                    android:textSize="@dimen/dimens_sp_10" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_tab_work_home_layout"
+            android:layout_width="@dimen/dimens_dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimens_dp_7"
+            android:layout_weight="1"
+            android:background="@color/seed_zhi_transparent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimens_dp_25"
+                android:layout_height="@dimen/dimens_dp_25"
+                android:layout_gravity="center"
+                android:src="@drawable/ec_tab_work_application_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_3"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimens_dp_4"
+                android:text="@string/ec_tab_work_home"
+                android:textColor="@drawable/ec_tab_color_selector"
+                android:textSize="@dimen/dimens_sp_10" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/home_tab_me_layout"
+            android:layout_width="@dimen/dimens_dp_0"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimens_dp_7"
+            android:layout_weight="1"
+            android:background="@color/seed_zhi_transparent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimens_dp_25"
+                android:layout_height="@dimen/dimens_dp_25"
+                android:layout_gravity="center"
+                android:src="@drawable/ec_tab_me_btn" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_3"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dimens_dp_4"
+                android:text="@string/ec_tab_me_title"
+                android:textColor="@drawable/ec_tab_color_selector"
+                android:textSize="@dimen/dimens_sp_10" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

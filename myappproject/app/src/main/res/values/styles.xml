@@ -1,0 +1,95 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/night_one_text_color</item>
+        -->
+
+        <item name="dayNightBackground">@color/day_backgroup_color</item>
+        <item name="dayNightOneTextColor">@color/day_one_text_color</item>
+        <item name="dayNightTwoTextColor">@color/day_two_text_color</item>
+        <item name="dayNightThreeTextColor">@color/day_three_text_color</item>
+        <item name="dayNightBackgroundDrawable">@color/day_backgroup_color</item>
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="AppBaseSplash" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@mipmap/start</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="AppSplash" parent="AppBaseSplash">
+
+    </style>
+
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+
+
+    <style name="moredialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogPrompt" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>   //提示框是否有边框
+        <item name="android:backgroundDimEnabled">true</item>//是否充许对话框的背景变暗。为true则充许变暗
+        <item name="android:windowNoTitle">true</item>//提示框是否有标题
+        <item name="android:windowIsFloating">true</item>//提示框是否是浮动的
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>//全屏
+        <item name="android:windowBackground">@color/transparent</item>//背景颜色是什么
+    </style>
+
+
+    <!--  这个是加入的代码 -->
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">@dimen/textsize16</item>
+    </style>
+
+    <style name="DialogFullscreen">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@drawable/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+</resources>

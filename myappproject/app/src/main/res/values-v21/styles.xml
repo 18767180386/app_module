@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppBaseTheme" parent="Theme.AppCompat.Light">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+
+    <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/ec_white</item>-->
+    <!--<item name="android:windowBackground">@color/ec_white</item>-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="windowNoTitle">true</item>-->
+    <!--&lt;!&ndash;<item name="android:actionBarWidgetTheme">@style/MySearchActionBar</item>&ndash;&gt;-->
+    <!--</style>-->
+
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--<item name="windowActionBar">false</item>-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--<item name="android:windowNoTitle">true</item>-->
+    <!--<item name="colorPrimary">@color/ec_navi_bar_bg</item>-->
+    <!--<item name="colorPrimaryDark">@color/green_09bb07</item>-->
+    <!--<item name="colorAccent">@color/ec_tab_press</item>-->
+    <!--<item name="android:windowTranslucentNavigation">false</item>-->
+    <!--<item name="android:windowTranslucentStatus">true</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+    <style name="AppSplash" parent="AppBaseSplash">
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--
+    <style name="AppSplash" parent="AppBaseSplash">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="chattheme" parent="chatBaseTheme">
+
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    -->
+
+</resources>
