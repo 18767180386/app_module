@@ -13,4 +13,5 @@ import com.aiju.zyb.view.ui.IBaseOccupationView;
 public interface IOuccpationDetailView extends IBaseOccupationView  {
      void  getOccupationView(Result<OccupationBean> o);
      void  getCommentView(ResultPageList<OccupationCommentInfo> o);
+     void  addCommentView(Result<String> o);
 }

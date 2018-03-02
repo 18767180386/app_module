@@ -1,39 +1,39 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:1-12:12
 	package
-		ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:3:5-38
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:3:5-38
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
 	android:versionName
-		ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:5:5-30
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:5:5-30
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:11-69
+		ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:4:5-28
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:4:5-28
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
 uses-sdk
-ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
-INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
+ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:7:5-9:41
 	android:targetSdkVersion
-		ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:9:9-38
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:9:9-38
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:8:9-34
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
-		INJECTED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:8:9-34
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
+		INJECTED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml
 application
-ADDED from E:\android_pro\my_work\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:11:5-20
+ADDED from D:\work\my_job\project_test\app_test\app_pro\app_module\myappproject\ptr-libs\AndroidManifest.xml:11:5-20

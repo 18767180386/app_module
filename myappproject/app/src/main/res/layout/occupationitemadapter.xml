@@ -61,7 +61,18 @@
                     android:lineSpacingExtra="@dimen/margin_5"
                     android:layout_marginTop="@dimen/margin_10"
                     android:maxLines="6"
+                    android:visibility="gone"
                     />
+
+                <com.jaydenxiao.common.commonutils.CollapsibleTextView
+                    android:id="@+id/collaps_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_10"
+                    >
+                </com.jaydenxiao.common.commonutils.CollapsibleTextView>
+
 
                 <TextView
                     android:id="@+id/comment_info"
@@ -71,6 +82,23 @@
                     android:textSize="@dimen/textsize12"
                     android:textColor="@color/color_33"
                     />
+
+                <LinearLayout
+                    android:id="@+id/comment_li"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:paddingTop="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingRight="@dimen/margin_10"
+                    android:background="@color/comment_bg"
+                    android:visibility="gone"
+                    android:showDividers = "middle"
+                    android:divider="@drawable/comment_linear_divider"
+                    android:paddingBottom="@dimen/margin_15"
+                    >
+                </LinearLayout>
             </LinearLayout>
 
     </RelativeLayout>

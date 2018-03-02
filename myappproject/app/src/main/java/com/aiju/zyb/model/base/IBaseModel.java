@@ -72,5 +72,10 @@ public interface IBaseModel {
     String getCommentUrl="occupation/getCommentList";
 
 
+    /**
+     *
+     * 添加评论
+     */
+    String addCommentUrl="occupation/addOccupationComment";
 
 }

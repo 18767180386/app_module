@@ -48,4 +48,16 @@ public interface IOccupationModel {
      * @param callBack
      */
     void getCommentList(Context context,int occ_id,int type,int current_page, int page_size, HttpRequestCallback callBack);
+
+
+    /**
+     *
+     *
+     * @param context
+     * @param comment_content
+     * @param comment_uid
+     * @param occupation_id
+     * @param callBack
+     */
+    void addComment(Context context,String comment_content,String comment_uid,String occupation_id,HttpRequestCallback callBack);
 }

@@ -6,4 +6,5 @@ package com.aiju.zyb.model.base;
 
 public interface IBaseConfig {
     int  pageSize=20;
+    int  sortType=0; // 0 降序 1 升序
 }

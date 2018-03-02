@@ -163,7 +163,6 @@ public class XListView extends ListView implements AbsListView.OnScrollListener 
         }
 
         mTotalItemCount = itemcount;
-
     }
 
     public void setmTotalItemCount() {
