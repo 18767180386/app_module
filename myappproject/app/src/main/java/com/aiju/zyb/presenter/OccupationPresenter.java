@@ -162,7 +162,7 @@ public class OccupationPresenter {
      * @param current_page
      * @param page_size
      */
-    public   void getCommentList(final Context context, int occ_id, int type, int current_page, int page_size)
+    public  void getCommentList(final Context context, int occ_id, int type, int current_page, int page_size)
     {
         iOccupationModel.getCommentList(context, occ_id, type, current_page, page_size, new HttpRequestCallback<ResultPageList<OccupationCommentInfo>>() {
             @Override
@@ -177,6 +177,7 @@ public class OccupationPresenter {
 
             @Override
             public void onResponse(ResultPageList<OccupationCommentInfo> o) {
+                HLog.w("net_ret",new Gson().toJson(o));
                 if(iBaseOccupationView instanceof IOuccpationDetailView)
                 {
                     ((IOuccpationDetailView) iBaseOccupationView).getCommentView(o);
@@ -190,6 +191,46 @@ public class OccupationPresenter {
             }
         });
     }
+
+
+    /**
+     *
+     *
+     * @param context
+     * @param comment_content
+     * @param comment_uid
+     * @param occupation_id
+     */
+    public void addComment(final Context context, String comment_content, String comment_uid, String occupation_id)
+    {
+        iOccupationModel.addComment(context, comment_content, comment_uid, occupation_id, new HttpRequestCallback<Result<String>>() {
+            @Override
+            public void onStart() {
+                iBaseOccupationView.showLoading(context.getString(R.string.loading));
+            }
+
+            @Override
+            public void onFinish() {
+
+            }
+
+            @Override
+            public void onResponse(Result<String> o) {
+                if(iBaseOccupationView instanceof IOuccpationDetailView)
+                {
+                    ((IOuccpationDetailView) iBaseOccupationView).addCommentView(o);
+                }
+                iBaseOccupationView.stopLoading();
+            }
+
+            @Override
+            public void onFailure(Call call, HttpException e) {
+                iBaseOccupationView.showErrorTip(e.getMessage().toString());
+            }
+        });
+    }
+
+
 
 
 }

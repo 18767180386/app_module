@@ -86,7 +86,23 @@ public class OccupationModel extends BaseModel implements IOccupationModel {
     }
 
 
-
-
+    /**
+     *
+     * 添加评论
+     * @param context
+     * @param comment_content
+     * @param comment_uid
+     * @param occupation_id
+     * @param callBack
+     */
+    @Override
+    public  void addComment(Context context,String comment_content,String comment_uid,String occupation_id,HttpRequestCallback callBack)
+    {
+        Map<String, Object> map = new LinkedHashMap<>();
+        map.put("comment_content",comment_content);
+        map.put("comment_uid",comment_uid);
+        map.put("occupation_id",occupation_id);
+        sendPostRequest(context,addCommentUrl, map, callBack);
+    }
 }
 

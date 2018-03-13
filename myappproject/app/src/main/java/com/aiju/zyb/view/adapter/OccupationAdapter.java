@@ -6,13 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.aiju.zyb.R;
 import com.aiju.zyb.bean.OccupationCommentInfo;
+import com.aiju.zyb.bean.OccupationReplyInfo;
 import com.aiju.zyb.bean.TaokeItemBean;
 import com.aiju.zyb.bean.Type;
+import com.jaydenxiao.common.commonutils.CollapsibleTextView;
 import com.jaydenxiao.common.commonutils.GlideUtils;
+import com.jaydenxiao.common.commonutils.TimeUtil;
 import com.my.baselibrary.utils.GlideTool;
 import com.my.baselibrary.utils.HLog;
 import com.my.baselibrary.utils.SettingUtil;
@@ -81,6 +85,8 @@ public class OccupationAdapter extends BaseAdapter {
              view.parse_num = (TextView) convertView.findViewById(R.id.parse_num);
              view.comment_content = (TextView) convertView.findViewById(R.id.comment_content);
              view.comment_info = (TextView) convertView.findViewById(R.id.comment_info);
+             view.comment_li=(LinearLayout)convertView.findViewById(R.id.comment_li);
+             view.tv=(CollapsibleTextView)convertView.findViewById(R.id.collaps_textview);
              convertView.setTag(view);
         } else {
             view = (MyView) convertView.getTag();
@@ -91,8 +97,39 @@ public class OccupationAdapter extends BaseAdapter {
             GlideUtils.getCicleImg(context, item.getUserInfo().getUserImg(), view.user_logo);
             view.user_name.setText(item.getUserInfo().getNickName());
             view.parse_num.setText(item.getCommentNum()+"");
-            view.comment_content.setText(item.getCommentContent());
-            view.comment_info.setText(item.getCommentTime()+"");
+         //   view.comment_content.setText(item.getCommentContent());\
+            view.tv.setDesc(item.getCommentContent(), view.tv, TextView.BufferType.NORMAL);
+            view.comment_info.setText(TimeUtil.friendly_time(TimeUtil.stampToDate(item.getCommentTime()+""))+"");
+            if(item.getReplyInfoList()!=null && item.getReplyInfoList().size()>0)
+            {
+                view.comment_li.removeAllViews();
+                LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                List<OccupationReplyInfo> list=item.getReplyInfoList();
+                TextView moreText=null;
+                if(list.size()==5)
+                {
+                    list=list.subList(0,5);
+                    moreText=new TextView(context);
+                    moreText.setText("查看全部"+list.size()+"条回复");
+                    moreText.setTextSize(14);
+                    moreText.setTextColor(context.getResources().getColor(R.color.comment_txt));
+                }
+                for (OccupationReplyInfo m:list)
+                {
+                    TextView textView=new TextView(context);
+                    textView.setText(m.getReplyContent());
+                    textView.setTextColor(context.getResources().getColor(R.color.color_33));
+                    textView.setTextSize(14);
+                    view.comment_li.addView(textView);
+                }
+                if(moreText!=null)
+                {
+                    view.comment_li.addView(moreText);
+                }
+                view.comment_li.setVisibility(View.VISIBLE);
+            }else{
+                view.comment_li.setVisibility(View.GONE);
+            }
         }
         return convertView;
     }
@@ -104,6 +141,8 @@ public class OccupationAdapter extends BaseAdapter {
         private TextView parse_num;
         private TextView comment_content;
         private TextView comment_info;
+        private LinearLayout comment_li;
+        private CollapsibleTextView tv;
 
     }
 }

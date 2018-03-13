@@ -109,6 +109,7 @@
         android:layout_marginTop="@dimen/margin_15"
         android:layout_marginLeft="@dimen/margin_15"
         android:layout_marginRight="@dimen/margin_15"
+        android:paddingBottom="@dimen/margin_15"
         >
         <TextView
             android:id="@+id/content"
@@ -124,8 +125,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:showDividers = "middle"
             android:layout_marginTop="@dimen/margin_15"
+            android:showDividers = "middle"
             android:divider="@drawable/linear_divider"
             >
 
